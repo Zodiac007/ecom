@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+import FeaturePage from "./pages/FeaturePage";
+import CheckoutPage from "./pages/CheckoutPage";
+import MobileNav from "./components/common/nav/MobileNav";
+import DesktopNav from "./components/common/nav/DesktopNav";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="sm:max-w-none lg:max-w-screen-lg lg:mx-auto pt-4 pb-12 lg:py-20 px-6 lg:px-0">
+      <div className="block lg:hidden">
+        <MobileNav />
+      </div>
+      <div className="hidden lg:block">
+        <DesktopNav />
+      </div>
+      <Routes>
+        <Route exact path="/" element={<FeaturePage />} />
+        <Route exact path="/cart" element={<CheckoutPage />} />
+      </Routes>
     </div>
   );
 }
