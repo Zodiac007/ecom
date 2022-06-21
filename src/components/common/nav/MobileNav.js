@@ -17,12 +17,16 @@ export default function MobileNav() {
         </Link>
 
         <Search />
-        <div className="relative w-8 h-8">
-          <Cart />
-          <span className="absolute right-0 top-0 rounded-full bg-black w-4 h-4 top right p-0 m-0 text-white font-mono text-[10px] flex items-center justify-center  leading-tight text-center">
-            {cartItems.length}
-          </span>
-        </div>
+
+        <Link to="/cart">
+          <div className="relative w-8 h-8">
+            <Cart />
+            <span className="absolute right-0 top-0 rounded-full bg-black w-4 h-4 top right p-0 m-0 text-white font-mono text-[10px] flex items-center justify-center  leading-tight text-center">
+              {cartItems.length}
+            </span>
+          </div>
+        </Link>
+
         <More />
       </div>
     </div>

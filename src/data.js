@@ -111,14 +111,14 @@ export const products = [
     src: colorwoodpuzzle,
     title: "Color Wood Puzzle",
     desc: "Special Design",
-    price: "$35",
+    price: 35,
   },
   {
     id: 15,
     src: bracelet,
     title: "Bracelet",
     desc: "Special Design",
-    price: "$7",
+    price: 7,
   },
 ];
 

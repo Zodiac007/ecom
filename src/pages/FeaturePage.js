@@ -3,7 +3,6 @@ import Card from "../components/common/Card";
 import Filter from "../components/assests/icons/filter";
 import Sort from "../components/assests/icons/sort";
 import CustomButton from "../components/common/CustomButton";
-
 import { Link } from "react-router-dom";
 
 export default function FeaturePage({ picture }) {

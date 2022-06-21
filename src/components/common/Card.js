@@ -8,7 +8,7 @@ export default function Card({ picture }) {
   const { addRemoveFromCart } = useContext(appContext);
   const cartIcon = (
     <div
-      className="absolute top-0 right-0 p-2 imgcart"
+      className="absolute top-0 right-0 p-2 imgcart cursor-pointer"
       onClick={() => addRemoveFromCart(picture)}
     >
       <Cart />
